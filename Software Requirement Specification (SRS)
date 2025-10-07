@@ -1,11 +1,63 @@
-Mục đích và phạm vi hệ thống
+1. Mục đích
 
-Tổng quan hệ thống
+Tài liệu này mô tả chi tiết các yêu cầu của hệ thống quản lý khách sạn, phục vụ cho quá trình phân tích, thiết kế và phát triển.
 
-Các yêu cầu chức năng (Functional Requirements)
+2. Phạm vi
 
-Các yêu cầu phi chức năng (Non-functional Requirements)
+Hệ thống quản lý khách sạn cho phép người dùng đặt phòng, kiểm tra tình trạng phòng, lưu trữ thông tin khách hàng, và xuất hóa đơn.
 
-Biểu đồ use case (nếu có)
+3. Tổng quan hệ thống
 
-Mô tả chi tiết từng chức năng.
+Người dùng chính: Quản trị viên, lễ tân, khách hàng.
+
+Chức năng chính:
+
+Quản lý phòng
+
+Quản lý khách hàng
+
+Đặt/Trả phòng
+
+Quản lý nhân viên
+
+Quản lý hóa đơn
+
+Thống kê báo cáo
+
+4. Các yêu cầu chức năng (Functional Requirements)
+STT	Chức năng	Mô tả
+1	Quản lý phòng	Thêm, sửa, xóa phòng, cập nhật tình trạng phòng
+2	Quản lý khách hàng	Lưu thông tin khách hàng khi đặt phòng
+3	Đặt phòng	Khách hàng chọn loại phòng, ngày nhận, ngày trả
+4	Trả phòng	Cập nhật trạng thái phòng khi khách rời đi
+5	Hóa đơn	Tự động tạo hóa đơn dựa trên thời gian lưu trú
+6	Báo cáo	Xem thống kê doanh thu, tỷ lệ lấp đầy phòng
+5. Các yêu cầu phi chức năng (Non-functional Requirements)
+
+Hiệu năng: Phản hồi trong < 3 giây cho mỗi thao tác.
+
+Bảo mật: Người dùng phải đăng nhập mới truy cập được.
+
+Khả năng mở rộng: Có thể thêm loại phòng, dịch vụ mới.
+
+Tính ổn định: Hoạt động liên tục 24/7, downtime < 1%.
+
+6. Biểu đồ Use Case (mô tả bằng chữ)
+
+Tác nhân:
+
+Khách hàng: Đặt phòng, hủy phòng, xem thông tin phòng.
+
+Lễ tân: Xác nhận đặt phòng, nhập thông tin khách hàng, in hóa đơn.
+
+Quản trị viên: Quản lý nhân viên, phòng, doanh thu.
+
+7. Giao diện dự kiến (mô tả)
+
+Trang đăng nhập
+
+Trang quản lý phòng (danh sách + trạng thái)
+
+Trang đặt phòng
+
+Trang hóa đơn và báo cáo
