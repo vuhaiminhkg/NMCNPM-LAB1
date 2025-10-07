@@ -1,0 +1,51 @@
+1. Tên dự án
+
+Hệ thống quản lý khách sạn (Hotel Management System – HMS)
+
+2. Mục tiêu dự án
+
+Xây dựng phần mềm giúp quản lý hoạt động khách sạn hiệu quả, bao gồm đặt phòng, nhận phòng, trả phòng, quản lý khách hàng, nhân viên và hóa đơn.
+Mục tiêu là tự động hóa quy trình thủ công, giảm sai sót và tăng trải nghiệm khách hàng.
+
+3. Phạm vi dự án
+
+Hệ thống dành cho:
+
+Quản lý khách sạn (quản trị viên)
+
+Nhân viên lễ tân
+
+Khách hàng có nhu cầu đặt phòng
+
+Phần mềm cho phép:
+
+Đặt và hủy phòng
+
+Quản lý thông tin khách hàng
+
+Quản lý danh sách phòng, giá phòng, tình trạng phòng
+
+Tạo hóa đơn và báo cáo doanh thu
+
+4. Lợi ích mang lại
+
+Giảm chi phí vận hành và quản lý thủ công
+
+Tăng độ chính xác khi xử lý thông tin
+
+Hỗ trợ báo cáo nhanh, chính xác
+
+Cải thiện dịch vụ chăm sóc khách hàng
+
+5. Ràng buộc
+
+Hệ thống hoạt động trên nền web (hoặc desktop)
+
+Cơ sở dữ liệu tập trung
+
+Cần bảo mật dữ liệu khách hàng
+
+6. Mô hình phát triển phần mềm
+
+Chọn mô hình Waterfall (thác nước)
+→ Vì phù hợp với dự án nhỏ, yêu cầu rõ ràng, và dễ quản lý tiến độ từng giai đoạn.
