@@ -82,8 +82,8 @@ Ví dụ:
 ![Giao diện trang bán hàng](https://link-den-anh-cua-ban.com/ui.png)
 
 👥 Thành viên nhóm
-Họ tên	Vai trò	Ghi chú
-Minh Vũ	Trưởng nhóm, phát triển backend	Phụ trách API và cơ sở dữ liệu
+Họ tên	   Vai trò	                           Ghi chú
+Minh Vũ	   Trưởng nhóm, phát triển backend	   Phụ trách API và cơ sở dữ liệu
 ...	...	...
 📅 Tiến độ phát triển
 Giai đoạn	Thời gian	Mô tả
