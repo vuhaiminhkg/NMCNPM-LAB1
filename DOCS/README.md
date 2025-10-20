@@ -1,3 +1,4 @@
+#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f
 # 🛒 ỨNG DỤNG BÁN LẺ TẠP HÓA CÔNG NGHỆ 4.0
 
 > Dự án mô phỏng hệ thống bán lẻ tạp hóa thông minh, ứng dụng công nghệ 4.0 vào quản lý hàng hóa, khách hàng và doanh thu.
