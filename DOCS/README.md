@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="[](https://github.com/vuhaiminhkg/NMCNPM-LAB1/blob/main/banner%20readme.png?raw=true)" alt="Smart Grocery 4.0 Banner" width="800"/>
+</p>
+
 # 🛒 ỨNG DỤNG BÁN LẺ TẠP HÓA CÔNG NGHỆ 4.0
 
 > Dự án mô phỏng hệ thống bán lẻ tạp hóa thông minh, ứng dụng công nghệ 4.0 vào quản lý hàng hóa, khách hàng và doanh thu.
