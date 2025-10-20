@@ -1,7 +1,8 @@
 
 <p align="center">
-  <img src="[](https://github.com/vuhaiminhkg/NMCNPM-LAB1/blob/main/banner%20readme.png?raw=true)" alt="Smart Grocery 4.0 Banner" width="800"/>
+  <img src="https://github.com/vuhaiminhkg/NMCNPM-LAB1/blob/main/banner%20readme.png?raw=true" alt="Smart Grocery 4.0 Banner" width="800"/>
 </p>
+
 
 # 🛒 ỨNG DỤNG BÁN LẺ TẠP HÓA CÔNG NGHỆ 4.0
 
