@@ -1,0 +1,32 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - Use Case Diagram
+
+actor "Khách hàng" as KH
+actor "Nhân viên" as NV
+actor "Quản lý" as QL
+actor "Hệ thống thanh toán" as PAY
+
+usecase "Đăng nhập/Đăng ký" as UC1
+usecase "Quản lý sản phẩm" as UC2
+usecase "Quản lý kho" as UC8
+usecase "Bán hàng" as UC3
+usecase "Thanh toán điện tử" as UC4
+usecase "Quản lý khách hàng" as UC5
+usecase "Phân tích dữ liệu" as UC6
+usecase "Đặt hàng online" as UC7
+
+KH --> UC1
+KH --> UC7
+KH --> UC4
+NV --> UC1
+NV --> UC2
+NV --> UC3
+NV --> UC5
+NV --> UC8
+QL --> UC1
+QL --> UC2
+QL --> UC6
+QL --> UC8
+UC4 --> PAY
+
+@enduml

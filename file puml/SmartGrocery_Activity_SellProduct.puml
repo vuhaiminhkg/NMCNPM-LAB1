@@ -1,0 +1,27 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - Activity: Bán hàng
+
+start
+:Nhân viên đăng nhập;
+:Chọn sản phẩm;
+:Hiển thị thông tin và tồn kho;
+:Nhập số lượng;
+if (Số lượng <= tồn kho?) then (Có)
+  :Tạo hóa đơn tạm;
+  :Áp dụng khuyến mãi (nếu có);
+  :Chọn phương thức thanh toán;
+  fork
+    :Thanh toán QR/Ví điện tử;
+  fork again
+    :Thanh toán tiền mặt;
+  end fork
+  :Xác nhận thanh toán;
+  :In hóa đơn;
+  :Cập nhật tồn kho;
+  :Lưu hóa đơn vào CSDL;
+else (Hết hàng)
+  :Thông báo hết hàng / đề xuất nhập kho;
+endif
+stop
+
+@enduml

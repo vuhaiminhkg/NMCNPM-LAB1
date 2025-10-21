@@ -1,0 +1,76 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - ERD + DFD (Level 0 & 1)
+
+' ERD section
+entity "SanPham" as SP {
+  * maSP : varchar
+  --
+  tenSP
+  loai
+  gia
+  soLuong
+  hanSD
+}
+
+entity "KhachHang" as KH {
+  * maKH : varchar
+  --
+  tenKH
+  diaChi
+  sdt
+  diemTichLuy
+}
+
+entity "NhanVien" as NV {
+  * maNV : varchar
+  --
+  tenNV
+  chucVu
+}
+
+entity "HoaDon" as HD {
+  * maHD : varchar
+  --
+  ngayLap
+  tongTien
+  phuongThucTT
+  maKH
+  maNV
+}
+
+entity "ChiTietHoaDon" as CTHD {
+  * maCT : varchar
+  --
+  maHD
+  maSP
+  soLuong
+  donGia
+}
+
+SP ||--o{ CTHD
+HD ||--o{ CTHD
+KH ||--o{ HD
+NV ||--o{ HD
+
+' DFD Level 0 (as notes/boxes)
+note left
+  DFD Level 0: Hệ thống SmartGrocery
+  External Actors:
+   - Khách hàng
+   - Nhân viên
+   - Quản lý
+   - Hệ thống thanh toán
+  Main Process: Quản lý bán hàng
+  Data Stores: SanPham, HoaDon, KhachHang
+end note
+
+' DFD Level 1 (textual steps as notes)
+note right
+  DFD Level 1: Quy trình bán hàng
+  1. Nhập sản phẩm & thêm vào giỏ
+  2. Tính tổng và áp dụng khuyến mãi
+  3. Xử lý thanh toán (QR/tiền mặt)
+  4. Lưu hóa đơn & cập nhật tồn kho
+end note
+
+@enduml

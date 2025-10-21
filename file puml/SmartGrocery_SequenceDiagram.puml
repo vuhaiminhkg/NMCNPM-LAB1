@@ -1,0 +1,27 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - Sequence: Thanh toán
+
+actor KhachHang
+participant "Giao diện Web" as UI
+participant "Server API" as SV
+participant "Hệ thống thanh toán" as PAY
+participant "CSDL" as DB
+
+KhachHang -> UI: Chọn thanh toán
+UI -> SV: Gửi yêu cầu tạo đơn (chi tiết giỏ hàng)
+SV -> DB: Kiểm tra tồn kho
+DB --> SV: Trả về tồn kho
+SV -> SV: Tính tổng, áp dụng khuyến mãi
+SV -> PAY: Gửi yêu cầu thanh toán (QR/Thanh toán điện tử)
+PAY --> SV: Phản hồi thanh toán (thành công/thất bại)
+alt Thanh toán thành công
+  SV -> DB: Lưu hóa đơn và chi tiết
+  DB --> SV: Xác nhận lưu
+  SV -> UI: Trả về kết quả thành công
+  UI -> KhachHang: Hiển thị kết quả & mã hóa đơn
+else Thanh toán thất bại
+  SV -> UI: Thông báo lỗi thanh toán
+  UI -> KhachHang: Hiển thị lỗi
+end
+
+@enduml

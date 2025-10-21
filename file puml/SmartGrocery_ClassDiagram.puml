@@ -1,0 +1,53 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - Class Diagram
+
+class SanPham {
+  - maSP: String
+  - tenSP: String
+  - loai: String
+  - gia: double
+  - soLuong: int
+  - hanSD: Date
+  + capNhatSL(delta: int)
+  + isHetHang(): boolean
+}
+
+class KhachHang {
+  - maKH: String
+  - tenKH: String
+  - diaChi: String
+  - sdt: String
+  - diemTichLuy: int
+  + capNhatDiem(points: int)
+}
+
+class NhanVien {
+  - maNV: String
+  - tenNV: String
+  - chucVu: String
+  + taoHoaDon()
+  + dangNhap()
+}
+
+class HoaDon {
+  - maHD: String
+  - ngayLap: Date
+  - tongTien: double
+  - phuongThucTT: String
+  + inHoaDon()
+  + tinhTongTien(): double
+}
+
+class ChiTietHoaDon {
+  - maCT: String
+  - soLuong: int
+  - donGia: double
+  + thanhTien(): double
+}
+
+SanPham "1" -- "0..*" ChiTietHoaDon : contains
+HoaDon "1" -- "1..*" ChiTietHoaDon : has
+KhachHang "0..1" -- "0..*" HoaDon : places
+NhanVien "0..1" -- "0..*" HoaDon : creates
+
+@enduml

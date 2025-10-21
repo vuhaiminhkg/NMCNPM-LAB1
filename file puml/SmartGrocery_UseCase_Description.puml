@@ -1,0 +1,28 @@
+@startuml
+title Ứng dụng Bán Lẻ Tạp Hóa 4.0 (SmartGrocery) - Use Case Descriptions
+
+note top
+  Use Case: Bán hàng (UC03)
+  - Actor chính: Nhân viên
+  - Mục tiêu: Tạo đơn hàng và hoàn tất giao dịch
+  - Tiền đề: Sản phẩm có trong hệ thống, nhân viên đã đăng nhập
+  - Kịch bản chính:
+     1. Nhân viên chọn sản phẩm.
+     2. Nhập số lượng, kiểm tra tồn kho.
+     3. Hệ thống tính tiền, áp dụng khuyến mãi.
+     4. Chọn phương thức thanh toán (tiền mặt/QR).
+     5. Xác nhận, in hóa đơn, cập nhật tồn kho.
+  - Kết quả: Hóa đơn lưu vào CSDL, tồn kho cập nhật.
+end note
+
+note bottom
+  Use Case: Quản lý sản phẩm (UC01)
+  - Actor chính: Nhân viên, Quản lý
+  - Mục tiêu: Thêm, sửa, xóa, tìm kiếm sản phẩm
+  - Kịch bản chính:
+     1. Nhân viên/Quản lý thêm/sửa/xóa sản phẩm.
+     2. Hệ thống lưu thay đổi vào CSDL.
+     3. Cập nhật tồn kho nếu cần.
+end note
+
+@enduml
